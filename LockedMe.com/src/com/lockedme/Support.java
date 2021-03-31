@@ -72,7 +72,7 @@ public class Support {
 	
 	
 	
-	public void decision() {
+	public void decision() throws IOException {
 		
 		Scanner scanner = new Scanner(System.in);
 		int pick;
@@ -100,7 +100,7 @@ public class Support {
 	}
 	
 	
-	public void secondDecision() {
+	public void secondDecision() throws IOException {
 		Scanner scanner = new Scanner(System.in);
 		int pick;
 		String fileName = "";
@@ -139,8 +139,8 @@ public class Support {
 	    
 	    break;
 	  case 3:
-		    System.out.println("Select 3 to");
-		   
+		  System.out.println("Type a file name that you are looking for: ");
+		  fileHand.searchFile(scannerImplString(fileName));	     
 		    break;
 	}
 	}
