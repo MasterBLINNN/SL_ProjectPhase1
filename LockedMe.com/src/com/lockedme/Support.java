@@ -12,6 +12,20 @@ public class Support {
 	FileHandling fileHand = new FileHandling();
 	
 	
+	public void programExecution() {
+	
+	do {
+		hello();			
+		try {
+			decision();
+		} catch (IOException e) {
+			System.out.println("Catch block error with execution.");
+			e.printStackTrace();
+		}
+	}
+		while (userDecisonRunProgramAgain());
+	}
+	
 	public void hello () {
 		System.out.println("###");
 		System.out.println("Welcome in the application -> LockedMe.com; Developer = Lukasz Blicharz");
