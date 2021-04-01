@@ -1,21 +1,14 @@
 package com.lockedme;
 
-import java.io.IOException;
-import java.util.Scanner;
-
 
 public class Application {
-
-	public static void main(String[] args) throws IOException {
+	
+	public static void main(String[] args) {
 
 		Support execution = new Support();
 		
-		do {
-			execution.hello();			
+		execution.programExecution();	
 		
-			execution.decision();
-		}
-			while (execution.userDecisonRunProgramAgain());
 	}
 
 }
