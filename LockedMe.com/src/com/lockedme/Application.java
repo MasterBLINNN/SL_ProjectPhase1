@@ -15,8 +15,7 @@ public class Application {
 		
 			execution.decision();
 		}
-			while (execution.oneMoreLoop());
-		//test123
+			while (execution.userDecisonRunProgramAgain());
 	}
 
 }

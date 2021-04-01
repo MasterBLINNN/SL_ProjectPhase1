@@ -52,20 +52,17 @@ public class Support {
 		return number;
 	}
 	
-	
-	
-	
-	
-	public boolean oneMoreLoop() {
+
+	public boolean userDecisonRunProgramAgain() {
 		System.out.println("###");
-		System.out.println("Do you want to run program again? If yes type 1 if no type any other value and program will be closed. ");
+		System.out.println("Do you want to run program again? If yes type '1' if NO type any other number and program will be closed. ");
 		pickValue = scannerImplInteger(number);
 		if (pickValue == 1) {
 			System.out.println("Your pick: " + pickValue);
 			return true;
 		}
 		else 
-			System.out.println("Other value selected application is closing. ");
+			System.out.println("Other number selected application is closing. ");
 			return false;
 	}
 	
