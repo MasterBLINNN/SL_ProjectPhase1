@@ -8,26 +8,14 @@ public class Application {
 
 	public static void main(String[] args) throws IOException {
 
-		Support text = new Support();
+		Support execution = new Support();
 		
 		do {
-			text.hello();			
+			execution.hello();			
 		
-			text.decision();
+			execution.decision();
 		}
-			while (text.oneMoreLoop());
-		
-	
-		
-		
-	
-		
-		//fileHand.createFile(input);
-		
-		
-		//fileHand.fileCheckOnDirectory();
-		
-		
+			while (execution.oneMoreLoop());
 		
 	}
 
